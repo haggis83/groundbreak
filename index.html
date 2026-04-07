@@ -1073,10 +1073,6 @@
     // Formspree AJAX &mdash; inline success, no redirect
     async function handleForm(form, successEl) {
       var action = form.getAttribute('action');
-      if (action.includes('mbdpqyjb')) {
-        alert('Replace mbdpqyjb with your Formspree form ID.');
-        return;
-      }
       try {
         var r = await fetch(action, {
           method: 'POST',
